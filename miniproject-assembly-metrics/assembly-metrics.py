@@ -14,4 +14,15 @@ with open(sys.argv[1]) as f:
         contigs.append(ident)
         lengths.append(len(sequence))
 
-print(len(contigs), mean(lengths), sum(lengths))
+print(f"Number of contigs: {len(contigs)}", f"Mean length of Contig: {mean(lengths)}", f"Sum of contig lengths: {sum(lengths)}")
+
+lengths.sort(reverse=True)
+total_length = sum(lengths)
+
+current_sum = lengths[0]
+for i in range(1, len(lengths)):
+    current_sum += lengths[i]
+    if current_sum > total_length / 2:
+        break
+
+print('sequence length of the shortest contig at 50% of the total assembly length: ', lengths[i])
