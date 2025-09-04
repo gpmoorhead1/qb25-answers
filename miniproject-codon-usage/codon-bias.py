@@ -18,10 +18,8 @@ with open(sys.argv[1], 'r') as f:
 aa = sys.argv[2]
 aa_codons = reverse[aa]
 
-count=0
-for codon in aa_codons:
-    if codon in counts:
-        count += counts[codon]
-
 with open(f'bias-{aa}.tsv', 'w') as f:
-    f.write(f"{aa}\t{count}")
+    for codon in aa_codons:
+        if codon in counts:
+            f.write(f"{codon}\t{counts[codon]}\n")
+
