@@ -70,7 +70,7 @@ dt %>%
      arrange(desc(Liver)) %>% select(Description) %>% head(20)
 
 # Interpretation here as a comment
-# A lot of these genes are mitochondrial genes. There are a lot of mitochondria in the liver so this makes sense.
+# A lot of these genes are mitochondrial genes. I hypothesize there are either a lot of mitochondria in the liver or the mitochondria in the liver are particularly active. 
 
 ```
 
@@ -126,7 +126,7 @@ Another way to compare tissues is to ask how similar are their expression patter
 
 R has a built-in function called `cor.test()` that measures the correlation between two vectors of numbers. Remember that you can extract the contents of a given column of a tibble as a vector using the syntax `tibble_name$column_name`. If a column name contains spaces, enclose the column name in backticks such as `` tibble_name$`column name` ``.
 
-Use `cor.test()` with the argument `method = "kendall"` to compute: - the Kendall correlation between `Liver` and `Heart - Left Ventricle` - the Spearman correlation between `Liver` and `Brian - Cortex`
+Use `cor.test()` with the argument `method = "kendall"` to compute: - the Kendall correlation between `Liver` and `Heart - Left Ventricle` - the Kendall correlation between `Liver` and `Brian - Cortex`
 
 Which pair of tissues is more strongly correlated? Does this result make sense biologically?
 
