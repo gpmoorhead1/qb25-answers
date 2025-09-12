@@ -1,4 +1,0 @@
-library(tidyverse)
-
-header <- c( "chr", "start", "end", "count" )
-df_kc <- read_tsv('git/qb25-answers/week1/hg19-kc-count.bed', col_names=header )
