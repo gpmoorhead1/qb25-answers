@@ -10,3 +10,4 @@
 
 `samtools idxstats A01_01.bam > A01_01.idxstats`
 
+Based on the haplotype data, samples 1, 3, and 4 all have the same haplotype, whereas 2, 5, and 6 all have the same different haplotype. When looking at the IGV screenshot, 1, 3, and 4 all look similar whereas 2, 5, and 6 look similar.
