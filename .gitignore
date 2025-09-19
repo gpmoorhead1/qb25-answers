@@ -208,3 +208,8 @@ __marimo__/
 
 *.fa
 *.gz
+*.fastq
+*.bam
+*.sam
+*.bai
+
