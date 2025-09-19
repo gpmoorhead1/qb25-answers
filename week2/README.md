@@ -1,0 +1,1 @@
+bowtie2 -p 4 -x ../genomes/sacCer3 -U /Users/cmdb/Data/BYxRM/fastq/A01_01.fq.gz > A01_01.sam
