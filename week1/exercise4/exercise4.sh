@@ -1,9 +1,9 @@
 # which gene has the most SNPs
-bedtools intersect -a ../exercise1/hg19-kc.bed -b snps-chr1.bed -c | sort -k 5 -r | head -n 1
-# chr1    23037331        23247993        ENST00000374630.8_7     995
+bedtools intersect -a ../exercise1/hg19-kc.bed -b snps-chr1.bed -c | sort -k 5 -r -n | head -n 1
+# SMYD3
 
-# ENST00000374630.8_7; EPHB2; chr1:23,037,332-23,247,993; 210,662bp in length; 16 exons
-# EPHB2 is a long gene, therefore it would make sense that this has a lot of SNPs
+# ENST00000490107.6_7; SMYD3; chr1:245912648-246670581; 757933 bp in length; 12 exons
+# SMYD3 is a long gene, therefore it would make sense that this has a lot of SNPs
 
 # sort subset of snps
 bedtools sample -n 20 -seed 42 -i snps-chr1.bed | bedtools sort > snps-chr1_sorted.bed
