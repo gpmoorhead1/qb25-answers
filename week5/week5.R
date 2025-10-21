@@ -67,3 +67,57 @@ test_data <- tibble(father_dnms=filter(M, Phase_combined=='father')$n,
 
 lm(data=test_data, formula=father_dnms - mother_dnms ~ 1) %>% summary()
 
+
+## Problem 3
+
+billboard <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-08-26/billboard.csv')
+
+billboard$time <- as.numeric(billboard$date)
+
+ggplot(billboard, aes(x=time, y=bpm)) +
+  geom_point() +
+  labs(title='BPM of Top Song Over Time',
+       y='BPM of Top Song',
+       x='Time (Seconds since 1970)') +
+  theme_classic()
+ggsave('/Users/cmdb/git/qb25-answers/week5/ex4_top-song-bpm_vs_time.png')
+
+
+ggplot(billboard, aes(x=time, y=acousticness)) +
+  geom_point() +
+  labs(title='Acousticness of Top Song Over Time',
+       y='Acousticness of Top Song',
+       x='Time (Seconds since 1970)') +
+  theme_classic()
+ggsave('/Users/cmdb/git/qb25-answers/week5/ex4_top-song-acousticness_vs_time.png')
+
+
+ggplot(billboard, aes(x=time, y=divisiveness)) +
+  geom_point() +
+  labs(title='Divisiveness of Top Song Over Time',
+       y='Divisiveness of Top Song',
+       x='Time (Seconds since 1970)') +
+  theme_classic()
+ggsave('/Users/cmdb/git/qb25-answers/week5/ex4_top-song-divisiveness_vs_time.png')
+
+ggplot(billboard, aes(x=weeks_at_number_one, y=overall_rating)) +
+  geom_point() +
+  labs(title='Weeks at Number One vs Song Rating',
+       y='Rating of Top Song',
+       x='Weeks at Number One') +
+  theme_classic()
+ggsave('/Users/cmdb/git/qb25-answers/week5/ex4_top-song-rating_vs_weeks-at-num-one.png')
+
+
+ggplot(billboard, aes(x=energy, y=happiness)) +
+  geom_point() +
+  labs(title='Song Energy vs Song Happiness',
+       y='Song Happiness',
+       x='Song Energy') +
+  theme_classic()
+ggsave('/Users/cmdb/git/qb25-answers/week5/ex4_top-song-rating_vs_weeks-at-num-one.png')
+
+lm(billboard, formula = happiness ~ 1 + energy + danceability + bpm) %>% summary()
+
+
+
