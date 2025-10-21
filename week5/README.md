@@ -32,3 +32,18 @@ Result: 78.69546 DNMs
    - There is a 2.2e-16 chance of seeing this big of a difference between the 2 distributions or bigger by chance, which is significant.
 3. How would you interpret the coefficient estimate for the intercept term?
    - The estimate for the intercept coefficient is the distance between the 2 averages of the distributions.
+  
+
+## Problem 3
+I chose Billboard Hot 100 Number Ones.
+
+Observations:
+- Seems like the acousticness of the top song has decreased over time.
+- Divisiveness of top song has maybe slightly increased over time.
+- Rating of top song seems correlated with the number of weeks it spent at number one.
+
+Linear Model: I tested if song happiness could be explained by song energy, danceability, and bpm.
+Formula: happiness ~ 1 + energy + danceability + bpm.
+The model has an r^2 value of 0.2952, meaning that it has a decent fit. Energy and danceability have coefficients of 0.456 and 0.518 respectively, meaning that they explain a good portion of the data.
+Meanwhile, bpm has a coefficient near 0, meaning that it doesn't explain much of the data.
+Energy and danceability both have p-values less that 2e-16, meaning that there is that low of a probability of seeing a variable explain that much of the data or more by chance.
