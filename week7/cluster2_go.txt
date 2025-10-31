@@ -1,0 +1,29 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20240807)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.5281/zenodo.16423886 Released 2025-07-22
+Analyzed List:	upload_1 (Drosophila melanogaster)
+Reference List:	Drosophila melanogaster (all genes in database)
+Test Type:	FISHER
+Correction:	FDR
+GO biological process complete	Drosophila melanogaster - REFLIST (13821)	upload_1 (28)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (raw P-value)	upload_1 (FDR)
+innate immune response (GO:0045087)	282	7	.57	+	12.25	1.12E-06	2.71E-03
+defense response to symbiont (GO:0140546)	293	7	.59	+	11.79	1.45E-06	2.62E-03
+defense response to other organism (GO:0098542)	298	7	.60	+	11.59	1.62E-06	2.35E-03
+immune response (GO:0006955)	342	7	.69	+	10.10	4.04E-06	4.88E-03
+proteolysis (GO:0006508)	860	15	1.74	+	8.61	1.26E-11	9.12E-08
+immune system process (GO:0002376)	440	7	.89	+	7.85	2.09E-05	1.90E-02
+defense response (GO:0006952)	492	7	1.00	+	7.02	4.29E-05	3.11E-02
+response to external biotic stimulus (GO:0043207)	519	7	1.05	+	6.66	6.02E-05	3.64E-02
+response to other organism (GO:0051707)	519	7	1.05	+	6.66	6.02E-05	3.36E-02
+response to biotic stimulus (GO:0009607)	520	7	1.05	+	6.64	6.09E-05	3.16E-02
+biological process involved in interspecies interaction between organisms (GO:0044419)	551	7	1.12	+	6.27	8.78E-05	4.25E-02
+protein metabolic process (GO:0019538)	1730	15	3.50	+	4.28	2.07E-07	7.50E-04
+primary metabolic process (GO:0044238)	3819	19	7.74	+	2.46	1.08E-05	1.11E-02
+metabolic process (GO:0008152)	4386	19	8.89	+	2.14	1.15E-04	4.91E-02
+biological regulation (GO:0065007)	4484	0	9.08	-	 < 0.01	2.15E-05	1.73E-02
+regulation of cellular process (GO:0050794)	4011	0	8.13	-	 < 0.01	9.04E-05	4.10E-02
+regulation of biological process (GO:0050789)	4225	0	8.56	-	 < 0.01	4.61E-05	3.04E-02
